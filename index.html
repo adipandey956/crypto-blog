@@ -1,10 +1,192 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Crypto Blog</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP Tokenomics - Crypto Blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .site-title {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+        
+        .site-description {
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+        
+        nav {
+            background: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #667eea;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #764ba2;
+        }
+        
+        main {
+            padding: 3rem 0;
+        }
+        
+        .articles-grid {
+            display: grid;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .article-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.07);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        }
+        
+        .article-title {
+            font-size: 1.8rem;
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .article-preview {
+            color: #666;
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+        
+        .read-more {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s;
+        }
+        
+        .read-more:hover {
+            transform: scale(1.05);
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+        
+        @media (max-width: 768px) {
+            .site-title {
+                font-size: 2rem;
+            }
+            
+            nav ul {
+                gap: 1rem;
+            }
+            
+            .article-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to Aditya's Crypto Blog</h1>
-    <p>This is my first page. Articles will go here soon!</p>
+    <header>
+        <div class="container">
+            <h1 class="site-title">AP Tokenomics</h1>
+            <p class="site-description">Crypto Blog - Learning, Sharing, and Growing</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main>
+        <div class="container">
+            <h2 style="font-size: 2rem; margin-bottom: 1rem; color: #333;">Latest Articles</h2>
+            
+            <div class="articles-grid">
+                <article class="article-card">
+                    <h3 class="article-title">How the Ethereum Virtual Machine (EVM) is Redefining Finance</h3>
+                    <p class="article-preview">
+                        Imagine a world where financial transactions happen without banks or brokers—where lending, borrowing, and trading occur seamlessly and transparently, 24/7. That's the power of the Ethereum Virtual Machine (EVM)...
+                    </p>
+                    <a href="article-evm.html" class="read-more">Read More →</a>
+                </article>
+                
+                <article class="article-card">
+                    <h3 class="article-title">What if You Could Own a Piece of Real Estate Digitally? Welcome to RWAs</h3>
+                    <p class="article-preview">
+                        What if you could own a piece of real estate, gold, or fine art—without ever touching it? Welcome to the future of finance: Real-World Assets (RWAs)! Imagine being able to invest in real-world assets like property, commodities, and bonds...
+                    </p>
+                    <a href="article-rwa.html" class="read-more">Read More →</a>
+                </article>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 AP Tokenomics. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
